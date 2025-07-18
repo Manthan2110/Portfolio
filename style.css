@@ -240,7 +240,7 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.layer h3{
+.layer h2{
     font-weight: 300;
     margin-bottom: 20px;
 }
