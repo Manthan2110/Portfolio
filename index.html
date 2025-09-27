@@ -53,25 +53,26 @@
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li>
-                                <span>AI & Machine learning</span><br>
-                                ML Algorithm Development & Deep Learning Projects<br>
-                                Model Development and Fine tuning<br>
-                                Automating ML workflows<br>
-                                Libraries: scikit-learn, XGBoost, LightGBM, OpenCV (for CV tasks), NLTK/spaCy (for NLP tasks)
+                                <span>AI & Machine Learning</span><br>
+                                - Deep learning, model development & fine-tuning<br>
+                                - Machine learning algorithms & workflow automation<br>
+                                - NLP and Computer Vision techniques
                             </li>
                             <li>
-                                <span>Data Analysis & Analytics</span><br>
-                                Languages & Tools: Python, SQL (MySQL), Excel (Advanced)<br>
-                                Visualization Tools: Power BI, Matplotlib, Seaborn, Plotly<br>
-                                Data Wrangling & Preprocessing<br>
-                                Proficient in data storytelling  
+                                <span>Data Analysis & Business Intelligence</span><br>
+                                - Data wrangling, preprocessing, and visualization<br>
+                                - Python, SQL, Excel (Advanced)<br>
+                                - Interactive dashboards and BI reporting
                             </li>
                             <li>
-                                <span>BI Developer</span><br>
-                                ETL & Data Integration using Power Query & Python ETL scripts<br>
-                                DAX & M Languages<br>
-                                Real-time Dashboarding with KPIs, drill-downs, slicers, interactive charts<br>
-                                BI Platforms: Microsoft Power BI
+                                <span>AI-Powered Automations & Chatbots</span><br>
+                                - Conversational AI and workflow automation<br>
+                                - Integration with web apps and real-time pipelines
+                            </li>
+                            <li>
+                                <span>Computer Vision & Image Processing</span><br>
+                                - Face & object detection, image annotation<br>
+                                - OpenCV and deep learning-based CV models
                             </li>
                         </ul>
                     </div>
@@ -145,34 +146,55 @@
 <div id="services">
     <div class="container">
         <h1 class="Subtitle">My Services</h1>
-        <div class="services-list">
-            <div>
+        
+        <!-- First Row -->
+        <div class="services-row">
+            <div class="service">
                 <i class="fa-brands fa-app-store"></i>
-                <h2>End-to-End Machine Learning Solutions</h2>
-                <p>We can develop and deploy machine learning models tailored to solve real-world problems like
-                   detecting fraud or predicting trends. From cleaning data to building and deploying
-                predictive systems, I provide solutions that help automate and improve decision-making.</p>
+                <h2>End-to-End Machine Learning & AI Solutions</h2>
+                <p>From designing predictive models to deploying AI systems, I develop solutions for real-world problems such as disease diagnosis, recommendation systems, and trend prediction. I handle data preprocessing, model building, and deployment for actionable, automated insights.</p>
                 <a href="#" data-modal-target="ml-modal">Learn More</a>
             </div>
-            <div>
+
+            <div class="service">
                 <i class="fa-solid fa-chart-simple"></i>
-                <h2>Data Analysis & Visualization</h2>
-                <p>We can help individuals and businesses make sense of their data by cleaning, analyzing, and 
-                    visualizing it through interactive dashboards. Whether it's sales reports, customer insights,
-                    or financial tracking, I turn raw data into clear, actionable insights using tools like Power BI, 
-                    Excel, and Streamlit.
-                </p>
+                <h2>Data Analysis & Business Intelligence</h2>
+                <p>I help businesses and individuals make data-driven decisions by analyzing and visualizing data through interactive dashboards, reports, and insights. Tools include Power BI, Excel, and Streamlit to convert raw data into meaningful, actionable intelligence.</p>
                 <a href="#" data-modal-target="da-modal">Learn More</a>
             </div>
-            <div>
+
+            <div class="service">
                 <i class="fa-brands fa-bots"></i>
                 <h2>AI-Powered Chatbot Development</h2>
-                <p>We can create smart, conversational chatbots using tools like Dialogflow that can automate customer support, 
-                    take food orders, answer FAQs, or assist visitors on your website. 
-                    These bots reduce manual effort, work 24/7, and improve user engagement.</p>
+                <p>Designing intelligent chatbots for customer support, food ordering, FAQs, or virtual assistants. These bots, built with Dialogflow or custom NLP models, improve engagement, reduce manual effort, and operate 24/7 across web or messaging platforms.</p>
                 <a href="#" data-modal-target="chatbot-modal">Learn More</a>
             </div>
         </div>
+
+        <!-- Second Row -->
+        <div class="services-row">
+            <div class="service">
+                <i class="fa-solid fa-eye"></i>
+                <h2>Computer Vision & Image Processing</h2>
+                <p>Implement CV solutions for face detection, object recognition, and image-based analytics. Applications include healthcare imaging, automated quality checks, and intelligent visual detection systems using OpenCV, Python, and deep learning models.</p>
+                <a href="#" data-modal-target="cv-modal">Learn More</a>
+            </div>
+
+            <div class="service">
+                <i class="fa-solid fa-robot"></i>
+                <h2>AI & Workflow Automations</h2>
+                <p>Automate repetitive tasks and business workflows using AI, Python scripts, or custom automation pipelines. From resume parsing to document summarization or predictive analytics pipelines, I create systems that save time and enhance operational efficiency.</p>
+                <a href="#" data-modal-target="automation-modal">Learn More</a>
+            </div>
+
+            <div class="service">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h2>Recommendation Engines</h2>
+                <p>Build intelligent recommendation systems for books, movies, restaurants, or products. Using collaborative filtering, content-based filtering, and hybrid models, I deliver personalized suggestions to enhance user experience and engagement.</p>
+                <a href="#" data-modal-target="recommender-modal">Learn More</a>
+            </div>
+        </div>
+
     </div>
 </div>
 <!-- ---------------------Portfolio-------------------------------------- -->
@@ -184,6 +206,7 @@
             <p class="tab-links" data-filter="ml">ML</p>
             <p class="tab-links" data-filter="dashboard">Dashboard</p>
             <p class="tab-links" data-filter="chatbot">Chatbot</p>
+            <p class="tab-links" data-filter="ai">Advanced AI</p>
         </div>
         <div class="work-list">
             <div class="work" data-tag="ml">
@@ -200,7 +223,7 @@
             <div class="work" data-tag="chatbot">
                 <img src="images/Food_Bot.webp">
                 <div class="layer">
-                    <h2>AI-Powered Food Service Chatbot</h2>
+                    <h2 style="margin-bottom: 0px;">Snacky</h2><h3>AI-Powered Food Service Chatbot</h3>
                     <p>This project is my final year project in college. I developed and deployed a Dialogflow-based chatbot to automate 90% of customer interactions for an 
                     online food delivery service, reducing support workload and increasing order completions by 30% through
                      data-driven response optimization.</p>
@@ -210,30 +233,10 @@
             <div class="work" data-tag="ml">
                 <img src="images/Books.webp">
                 <div class="layer">
-                    <h3>BookVerse<br>AI-Powered Reading Companion</h3>
+                    <h2 style="margin-bottom: 0px;">BookVerse</h2><h3>AI-Powered Reading Companion</h3>
                     <p>Unleash your inner bookworm with this ML-powered Book Recommendation Web App! Built for curious readers, 
                         it smartly suggests your next favorite read stylish UI, witty surprises, and open-source magic all rolled into one!.</p>
                     <a href="https://github.com/Manthan2110/ContentBased-Movie-Recommender" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work hidden-work" data-tag="ml">
-                <img src="images/Movie-recommender.webp">
-                <div class="layer">
-                    <h2>Movie Recommendation System</h2>
-                    <p>A content-based Movie Recommendation System built using Python and Streamlit, 
-                        which suggests similar movies based on selected titles. It uses cosine similarity
-                        on movie metadata and fetches real-time posters via the TMDB API to deliver an engaging user experience.</p>
-                    <a href="https://github.com/Manthan2110/ContentBased-Movie-Recommender" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work hidden-work" data-tag="dashboard">
-                <img src="images/Blinkit.webp">
-                <div class="layer">
-                    <h2>Blinkit Business Intelligence Dashboard</h2>
-                    <p>An interactive Power BI dashboard designed to analyze Blinkit's operational data, 
-                    uncovering insights on sales trends, product performance, inventory bottlenecks, and regional growth. 
-                    It empowers data-driven decision-making to optimize operations and boost revenue.</p>
-                    <a href="https://blinkitdashboard.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work hidden-work" data-tag="dashboard">
@@ -248,13 +251,64 @@
                 </div>
             </div>
             <div class="work hidden-work" data-tag="dashboard">
-                <img src="images/Finance_Tracker.webp">
+                <img src="images/Blinkit.webp">
                 <div class="layer">
-                    <h2>Personal Finance Tracker </h2>
-                    <p>An interactive and user-friendly dashboard built in Microsoft Excel to help individuals monitor and manage
-                        their personal finances. Designed to track income, expenses, and savings, this tool offers dynamic visualizations
-                        and intuitive navigation.</p>
-                    <a href="https://github.com/Manthan2110/Personal-Finance-Tracker-Dashboard-Excel" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h2>Blinkit Business Intelligence Dashboard</h2>
+                    <p>An interactive Power BI dashboard designed to analyze Blinkit's operational data, 
+                    uncovering insights on sales trends, product performance, inventory bottlenecks, and regional growth. 
+                    It empowers data-driven decision-making to optimize operations and boost revenue.</p>
+                    <a href="https://blinkitdashboard.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-work" data-tag="dashboard">
+                <img src="images/Weather.webp">
+                <div class="layer">
+                    <h2>Weather Dashboard</h2>
+                    <p>This end-to-end BI project visualizes operational data of a hospital using
+                     Power BI. It provides a view of hospital performance across departments such as Patient Care, 
+                     Doctor Management, Hospital Operations, & Financial Analytics. The goal was to build a 
+                     dashboard that enables healthcare admin to make data-driven decisions.</p>
+                    <a href="https://hospital-managment-dashboard.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-work" data-tag="ai">
+                <img src="images/Summarizer.webp">
+                <div class="layer">
+                    <h2 style="margin-bottom: 0px;">LiteNote</h2><h3>AI Summarizer for YouTube & Docs</h3>
+                    <p>An AI-powered productivity tool that summarizes long videos, articles, and documents into concise, 
+                    actionable notes. Built with Streamlit and Google Gemini, LiteNote allows users to quickly capture insights, 
+                    save time, and focus on the most important content.</p>
+                    <a href="https://github.com/Manthan2110/LiteNote-A-smart-content-summarizer" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-work" data-tag="ai">
+                <img src="images/Dark_Spots.webp">
+                <div class="layer">
+                    <h2>Face Dark Spots &<br> Eyes Detection</h2>
+                    <p>A computer vision application using OpenCV that detects faces, eyes, and dark spots under the eyes. 
+                    It includes severity grading and annotated outputs, making it useful for cosmetic analysis, medical imaging, 
+                    or AI-based face preprocessing tasks.</p>
+                    <a href="https://github.com/Manthan2110/Face-Dark-Spot-Detection" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" data-tag="ml">
+                <img src="images/FlavorFinder.webp">
+                <div class="layer">
+                    <h2 style="margin-bottom: 0px;">FlavorFinder</h2><h3>Restaurant Recommendation</h3>
+                    <p>An AI-powered smart food discovery app that provides personalized restaurant recommendations based on
+                    cuisine, location, ratings, and user preferences. Built with Streamlit and collaborative filtering, 
+                    it helps users discover trending, highly-rated, and tailored dining options effortlessly.</p>
+                    <a href="hhttps://github.com/Manthan2110/FlavorFinder" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-work" data-tag="ai">
+                <img src="images/Resume.webp">
+                <div class="layer">
+                    <h2 style="margin-bottom: 0px;">ResumeHub</h2><h3>AI-Powered Resume Parser & Matcher</h3>
+                    <p>An AI-driven recruiting assistant that parses resumes, extracts structured data, and matches 
+                    candidates to job descriptions using Google Gemini and TF-IDF semantic similarity. It helps recruiters
+                    save time, detect missing keywords, and improve hiring efficiency with a clean, modern UI.</p>
+                    <a href="https://github.com/Manthan2110/Talent-Match-AI" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -275,7 +329,7 @@
                     <a href="https://github.com/Manthan2110?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></i></a>
                     <a href="https://t.me/ManthanJadav" target="_blank"><i class="fa-brands fa-telegram"></i></i></a>
                 </div>
-                <a href="images/New folder/Resume.pdf" target="_blank" class="btn btn2">Download CV</a>
+                <a href="images/Cv.pdf" target="_blank" class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
