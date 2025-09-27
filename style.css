@@ -146,18 +146,20 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
-
 /* ------------------Services--------------------------------- */
 #services{
     padding: 30px 0;
 }
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+
+.services-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     margin-top: 50px;
+    justify-content: space-between;
 }
-.services-list div{
+
+.service{
     background: #262626;
     padding: 40px;
     font-size: 13px;
@@ -166,24 +168,35 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5s ;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transform: translateY(0) scale(1);
+    flex: 1 1 30%; /* Ensures 3 items per row */
+    min-width: 250px; /* responsive minimum width */
 }
-.services-list div i{
+
+.service i{
     font-size: 50px;
     margin-bottom: 30px;
 }
-.services-list div h2{
-    font-size: 30px;
+
+.service h2{
+    font-size: 24px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.services-list div a{
+
+.service p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.service a{
     text-decoration: none;
     color: #fff;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
-.services-list div:hover{
+
+.service:hover{
     background-color: #ff004f;
     color: #fff;
     transform: translateY(-10px) scale(1.04);
@@ -240,7 +253,7 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.layer h2{
+.layer h2,h3{
     font-weight: 300;
     margin-bottom: 20px;
 }
