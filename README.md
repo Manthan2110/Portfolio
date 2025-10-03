@@ -40,3 +40,52 @@ portfolio-website/
 ├── /projects
 ├── /blog (optional)
 └── README.md
+
+
+## 🙋‍♂️ About Me  
+Hi! I’m **Manthan Jadav**, a final-year CSE student from Ahmedabad.  
+I’m a passionate and versatile data professional who thrives at the intersection of **Analytics, Business Intelligence, and Machine Learning**.  
+I love transforming raw data into actionable insights through **ML models, dashboards, and automation pipelines**.  
+
+---
+
+## 💼 Services  
+- **End-to-End Machine Learning & AI Solutions**  
+- **Data Analysis & Business Intelligence Dashboards**  
+- **AI-Powered Chatbot Development**  
+- **Computer Vision & Image Processing**  
+- **AI & Workflow Automations**  
+- **Recommendation Engines**  
+
+---
+
+## 🧑‍💻 Skills  
+- **AI & Machine Learning** – Deep Learning, NLP, CV, model fine-tuning  
+- **Data Analysis & BI** – Python, SQL, Excel (Advanced), Power BI  
+- **Automation & Chatbots** – Conversational AI, workflow automation  
+- **Computer Vision** – Face detection, image annotation with OpenCV  
+
+---
+
+## 📈 Featured Projects  
+
+| Project | Description | Tech Stack | Link |
+|---------|-------------|------------|------|
+| **Smart Healthcare Hub** | ML-powered Disease Diagnosis web app with sleek UI and chatbot support. | Python, Flask, ML | [View on GitHub](#) |
+| **Snacky (AI Food Service Chatbot)** | Automates customer interactions for food delivery using Dialogflow. | Dialogflow, Python | [View on GitHub](#) |
+| **BookVerse (AI Book Recommender)** | Personalized book recommendations with ML. | Python, NLP | [View on GitHub](#) |
+| **Blinkit Business Intelligence Dashboard** | Interactive Power BI dashboard analyzing sales & growth. | Power BI | [Live Demo](#) |
+| **Pix2Caption (Image Caption Generator)** | CNN+LSTM based image-to-text system with Streamlit demo. | Python, Keras | [Live App](#) |
+| **LiteNote (AI Summarizer)** | Summarizes YouTube & docs with Streamlit + Gemini API. | Streamlit, Gemini | [View on GitHub](#) |
+
+…and more dashboards & AI apps in the repository!  
+
+---
+
+## 📬 Connect With Me  
+- [LinkedIn](#)  
+- [GitHub](#)  
+- [Portfolio Website](#)  
+
+---
+✨ *Thanks for visiting my portfolio! Feel free to explore my projects and get in touch.*
