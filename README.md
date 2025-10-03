@@ -40,7 +40,8 @@ portfolio-website/
 ├── /projects
 ├── /blog (optional)
 └── README.md
-
+```
+---
 
 ## 🙋‍♂️ About Me  
 Hi! I’m **Manthan Jadav**, a final-year CSE student from Ahmedabad.  
