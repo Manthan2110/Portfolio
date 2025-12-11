@@ -1,9 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --hue: 255;
+    --first-color-alt-2: hsl(var(--hue), 60%, 56%);
+
+    --body-font: "Montserrat", sans-serif;
+    --second-font: "Unbounded", sans-serif;
+}
+
 *{
-    margin : 0;
-    padding : 0;
-    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);   /* Montserrat */
     box-sizing: border-box;
 }
+
+/* Unbounded for section titles */
+.Subtitle,
+#about .Subtitle,
+#services .Subtitle,
+#portfolio .Subtitle,
+#work .Subtitle,
+#contact .Subtitle,
+h1.section-title {
+    font-family: var(--second-font);  /* Unbounded */
+}
+
+/* Optional: all H1 titles use Unbounded */
+h1 {
+    font-family: var(--second-font);
+}
+
+/* Optional: Work section titles */
+.work--title {
+    font-family: var(--second-font);
+}
+
+/* Optional: Portfolio filters titles */
+.portfolio-filters .tab-links {
+    font-family: var(--second-font);
+}
+
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
@@ -28,6 +67,10 @@ body{
 @keyframes blink {
     0%, 50% { opacity: 1; }
     51%, 100% { opacity: 0; }
+}
+
+.btn, .btn2, nav ul li a {
+    font-family: var(--body-font); /* Keep Montserrat clean for UI */
 }
 
 .container{
@@ -76,7 +119,7 @@ nav ul li a:hover::after{
     font-size: 30px;
 }
 .header-text h1{
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 20px;
 }
 .header-text h1 span{
@@ -109,7 +152,7 @@ nav ul li a:hover::after{
 }
 .tab-title{
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 20px;
 }
 .tab-links{
     margin-right: 50px;
@@ -146,9 +189,258 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+/* ------------------Work Experience---------------------------*/
+.work-section .Subtitle{
+    margin-left: 580px;
+    margin-bottom: 50px;
+}
+.work-section .Subtitle span{
+    color: #ff004f;
+    margin-left: 50px;
+}
+#work{
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.work--tabs {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    margin: 0 auto 18px;     
+    width: 100%;
+    max-width: 720px;
+}
+
+.work-button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid rgba(15, 23, 36, 0.06);
+    background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+    padding: 10px 16px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(20, 40, 80, 0.06);
+    font-weight: 600;
+    color: #0f1724;
+    cursor: pointer;
+    transition: transform .12s ease, box-shadow .12s ease, background .12s ease, color .12s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    line-height: 1;
+    user-select: none;
+    margin-bottom: 25px;
+}
+
+/* Hover / hover-like states */
+.work-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(16, 24, 40, 0.12);
+}
+
+/* Active (pressed) */
+.work-button:active {
+    transform: translateY(-1px) scale(.998);
+    box-shadow: 0 6px 18px rgba(16, 24, 40, 0.14);
+}
+
+/* Focus for keyboard users */
+.work-button:focus {
+    outline: 3px solid rgba(71, 99, 240, 0.14);
+    outline-offset: 4px;
+}
+
+
+/* Ensure icons inside buttons look correct when active */
+.work-button i {
+    opacity: 0.95;
+    transition: color .12s ease, opacity .12s ease;
+}
+
+.work-button.work-active i {
+    color: rgba(255,255,255,0.95);
+    opacity: 1;
+}
+
+/* Responsive: slightly smaller on very small screens */
+@media (max-width: 420px) {
+    .work-button {
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+}
+/* Modern, accessible styling for Work tab buttons */
+.work--tabs {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.work-button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid rgba(15, 23, 36, 0.06);
+    background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+    padding: 10px 16px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(20, 40, 80, 0.06);
+    font-weight: 600;
+    color: #0f1724;
+    cursor: pointer;
+    transition: transform .12s ease, box-shadow .12s ease, background .12s ease, color .12s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    line-height: 1;
+    user-select: none;
+}
+
+/* Hover / hover-like states */
+.work-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(16, 24, 40, 0.12);
+}
+
+/* Active (pressed) */
+.work-button:active {
+    transform: translateY(-1px) scale(.998);
+    box-shadow: 0 6px 18px rgba(16, 24, 40, 0.14);
+}
+
+/* Focus for keyboard users */
+.work-button:focus {
+    outline: 3px solid rgba(71, 99, 240, 0.14);
+    outline-offset: 4px;
+}
+
+/* Ensure icons inside buttons look correct when active */
+.work-button i {
+    opacity: 0.95;
+    transition: color .12s ease, opacity .12s ease;
+}
+
+.work-button.work-active i {
+    color: rgba(255,255,255,0.95);
+    opacity: 1;
+}
+
+/* Responsive: slightly smaller on very small screens */
+@media (max-width: 420px) {
+    .work-button {
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+}
+.work-button:hover{
+    color: #ff004f;
+}
+
+.work--area{
+    position: relative;
+    padding-left: 1rem;
+}
+
+.work--content{
+    display: grid;
+    row-gap: 4rem;
+}
+
+.work--card{
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: repeat(3, 560px);
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.work-data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work--title {
+    font-size: clamp(18px, 1.8rem + 0.6vw, 22px);
+    font-weight: 700;
+    line-height: 1.12;
+    margin: 0 0 6px;
+}
+
+.work--subtitle {
+    display: block;
+    font-size: clamp(13px, 0.95rem + 0.4vw, 16px);
+    font-weight: 600;
+    color: #b54769;
+    margin: 0 0 8px;
+}
+
+.work--desctiption { /* support both spellings */
+    font-size: clamp(13px, 0.95rem + 0.2vw, 16px);
+    color: #ababab;
+    line-height: 1.45;
+    margin: 0;
+}
+
+.work--year {
+    font-size: clamp(12px, 0.85rem + 0.2vw, 14px);
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+.work--line{
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg,
+                hsla(var(--hue), 60%, 64%, 0),
+                #ff004f);
+    position: absolute;
+    left: -.25rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+}
+
+.work--line::after{
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: #ff004f;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -1px;
+    left: -6px;
+}
+
+/* Show & Hide Section */
+.work--area [data-content]{
+    display: none;
+}
+
+.work-active[data-content]{
+    display: grid;
+
+}
+
+/* Active Tabs */
+.work-button.work-active{
+    color: #ff004f;
+}
+
+
 /* ------------------Services--------------------------------- */
 #services{
-    padding: 30px 0;
+    padding: 50px 0;
+}
+.container h1 span{
+    color: #ff004f;
 }
 
 .services-row{
@@ -168,8 +460,8 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5s ;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transform: translateY(0) scale(1);
-    flex: 1 1 30%; /* Ensures 3 items per row */
-    min-width: 250px; /* responsive minimum width */
+    flex: 1 1 30%;
+    min-width: 250px;
 }
 
 .service i{
@@ -216,11 +508,17 @@ nav ul li a:hover::after{
 #portfolio{
     padding: 50px 0;
 }
+.container h1 span{
+    color: #ff004f;
+}
 .work-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     margin-top: 50px;
+}
+.work-list p, .work-list h2{
+    font-family: "Exo 2", sans-serif;
 }
 .work {
     border-radius: 10px;
@@ -253,7 +551,7 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.layer h2,h3{
+.layer h2, .layer h3{
     font-weight: 300;
     margin-bottom: 20px;
 }
@@ -330,6 +628,9 @@ nav ul li a:hover::after{
     color: #ff004f;
     margin-right: 20px;
     font-size: 20px;
+}
+.contact-left h1 span{
+    color: #ff004f;
 }
 .social-icons{
     margin-top: 30px;
