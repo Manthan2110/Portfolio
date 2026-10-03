@@ -21,57 +21,132 @@ tabs.forEach((tab) => {
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link")
+function opentab(e, tabname){
+    // Fallback if called without event argument
+    if (typeof e === 'string' && !tabname) {
+        tabname = e;
+        e = window.event;
     }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab")
+    const currentTarget = e ? (e.currentTarget || e.target) : null;
+    
+    for(let tablink of tablinks){
+        tablink.classList.remove("active-link");
     }
-    event.currentTarget.classList.add("active-link")
-    document.getElementById(tabname).classList.add("active-tab")
+    for(let tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    if (currentTarget) {
+        currentTarget.classList.add("active-link");
+    }
+    const targetEl = document.getElementById(tabname);
+    if (targetEl) {
+        targetEl.classList.add("active-tab");
+    }
 }
 
 // Mobile menu functionality
-var sidemenu = document.getElementById("side-menu");
+const sidemenu = document.getElementById("side-menu");
 
 function openmenu(){
-    sidemenu.style.right = "0";
-    sidemenu.classList.add("show-menu");
+    if (sidemenu) {
+        sidemenu.classList.add("show-menu");
+    }
 }
 
 function closemenu(){
-    sidemenu.style.right = "-200px";
-    sidemenu.classList.remove("show-menu");
+    if (sidemenu) {
+        sidemenu.classList.remove("show-menu");
+    }
 }
 
-// Form submission with improved feedback
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwvmdiVOnccn_GH-FcBlXigEhiQFspvgVbkfkVwEqF867TCl4JaLn2LWdWhut8UvoCP/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg")
-
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const submitBtn = form.querySelector('button[type="submit"]');
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = 'Sending...';
-    
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully!";
-            msg.style.color = "#61b752";
-            form.reset();
-        })
-        .catch(error => {
-            msg.innerHTML = "Error sending message. Please try again.";
-            msg.style.color = "#ff004f";
-        })
-        .finally(() => {
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = 'Submit';
-            setTimeout(() => msg.innerHTML = "", 3000);
-        });
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(e) {
+    if (sidemenu && sidemenu.classList.contains('show-menu')) {
+        if (!sidemenu.contains(e.target) && !e.target.closest('.fa-bars')) {
+            closemenu();
+        }
+    }
 });
+
+// Contact Form Submission (Option B: Web3Forms Developer Service)
+const contactForm = document.getElementById('contact-form') || document.forms['contact-form'];
+const msg = document.getElementById("msg");
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const submitBtn = document.getElementById('form-submit-btn') || contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn ? submitBtn.innerHTML : 'Submit';
+        
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+        }
+        if (msg) {
+            msg.innerHTML = "";
+        }
+
+        const formData = new FormData(contactForm);
+        const accessKey = formData.get("access_key");
+
+        // Graceful fallback if user has not yet pasted their unique Web3Forms access key
+        if (!accessKey || accessKey === "YOUR_ACCESS_KEY_HERE") {
+            const senderName = formData.get("name") || "";
+            const senderEmail = formData.get("email") || "";
+            const userSubject = formData.get("user_subject") || "Portfolio Inquiry";
+            const messageBody = formData.get("message") || "";
+            
+            const mailtoUrl = `mailto:manthanjadav746@gmail.com?subject=${encodeURIComponent(userSubject)}&body=${encodeURIComponent("From: " + senderName + " (" + senderEmail + ")\n\n" + messageBody)}`;
+            window.location.href = mailtoUrl;
+            
+            if (msg) {
+                msg.innerHTML = `<i class="fa-solid fa-circle-info"></i> Please paste your free Web3Forms Key in <code>index.html</code> for instant background sending. (<a href="${mailtoUrl}" style="color: #ff004f; text-decoration: underline;">Click here to send via email client</a>)`;
+                msg.style.color = "#ffb703";
+            }
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            }
+            return;
+        }
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+            const data = await response.json();
+
+            if (response.ok && data.success) {
+                if (msg) {
+                    msg.innerHTML = '<i class="fa-solid fa-circle-check"></i> Thank you! Your message was sent successfully.';
+                    msg.style.color = "#61b752";
+                }
+                contactForm.reset();
+            } else {
+                throw new Error(data.message || "Failed to send message");
+            }
+        } catch (error) {
+            console.error("Form submission error:", error);
+            if (msg) {
+                msg.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Error sending message. Opening direct email...';
+                msg.style.color = "#ff004f";
+            }
+            // Fallback to mailto on network/API failure
+            const userSubject = formData.get("user_subject") || "Portfolio Inquiry";
+            const messageBody = formData.get("message") || "";
+            window.open(`mailto:manthanjadav746@gmail.com?subject=${encodeURIComponent(userSubject)}&body=${encodeURIComponent(messageBody)}`, '_blank');
+        } finally {
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            }
+            setTimeout(() => {
+                if (msg) msg.innerHTML = "";
+            }, 6000);
+        }
+    });
+}
 
 // See More functionality with smooth animation
 const seeMoreBtn = document.getElementById('seeMoreBtn');
@@ -145,23 +220,69 @@ seeMoreBtn.textContent = 'See More';
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        if (!href || href === '#') return;
+        const target = document.querySelector(href);
         if (target) {
+            e.preventDefault();
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
-            // Close mobile menu if open
-            if (window.innerWidth <= 600) {
-                closemenu();
+            // Always close mobile/tablet drawer if open
+            closemenu();
+        }
+    });
+});
+
+// Mobile touch card support: tap to reveal details on touch screens
+document.querySelectorAll('.work-list .work').forEach(workCard => {
+    workCard.addEventListener('click', function(e) {
+        // If clicking directly on external project link, let it open
+        if (e.target.closest('a')) return;
+        
+        const isTouch = window.matchMedia('(hover: none) or (max-width: 992px)').matches;
+        if (isTouch) {
+            const wasActive = this.classList.contains('touch-active');
+            document.querySelectorAll('.work-list .work.touch-active').forEach(c => c.classList.remove('touch-active'));
+            if (!wasActive) {
+                this.classList.add('touch-active');
             }
         }
     });
 });
 
-// Add scroll-based animations
+// Close active touch card on outside tap
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.work')) {
+        document.querySelectorAll('.work-list .work.touch-active').forEach(c => c.classList.remove('touch-active'));
+    }
+});
+
+// Add scroll-based animations, progress bar, back-to-top and ScrollSpy
+const scrollProgress = document.getElementById('scroll-progress');
+const backToTopBtn = document.getElementById('back-to-top');
+
 window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    
+    // 1. Reading progress line
+    if (scrollProgress && scrollHeight > 0) {
+        const progress = (scrollTop / scrollHeight) * 100;
+        scrollProgress.style.width = progress + '%';
+    }
+
+    // 2. Back-to-top button visibility
+    if (backToTopBtn) {
+        if (scrollTop > 350) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    }
+
+    // 3. Work items reveal animation
     const works = document.querySelectorAll('.work');
     works.forEach(work => {
         const workTop = work.getBoundingClientRect().top;
@@ -171,9 +292,31 @@ window.addEventListener('scroll', function() {
             work.style.transform = 'translateY(0)';
         }
     });
+
+    // 4. ScrollSpy: active nav link highlight
+    let currentId = '';
+    const sectionIds = ['header', 'about', 'work', 'services', 'portfolio', 'contact'];
+    sectionIds.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            const rect = el.getBoundingClientRect();
+            if (rect.top <= 250 && rect.bottom >= 150) {
+                currentId = id;
+            }
+        }
+    });
+    if (currentId) {
+        document.querySelectorAll('#side-menu li a').forEach(link => {
+            if (link.getAttribute('href') === '#' + currentId) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
 });
 // Typing effect for header text
-const roles = ["AI/ML Engineer", "Python Developer", "Data Analyst", "BI Developer"]; 
+const roles = ["Python Developer", "Software Engineer", "AI/ML Engineer", "Data Analyst", "BI Developer"]; 
 let roleIndex = 0;
 let charIndex = 0;
 let typing = true;
@@ -240,3 +383,26 @@ document.querySelectorAll('.modal-contact-btn').forEach(button => {
         }
     });
 });
+
+// Close modal on Escape key press
+window.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        document.querySelectorAll('.modal.show').forEach(modal => {
+            modal.classList.remove('show');
+        });
+    }
+});
+
+// Smooth Scroll to Top
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Ensure pure dark mode across all visits & clean up legacy keys
+try {
+    document.body.classList.remove('light-mode');
+    localStorage.removeItem('portfolio-theme');
+} catch (e) {}

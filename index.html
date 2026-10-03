@@ -1,55 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Manthan's Portfolio </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Manthan Jadav | AI/ML Engineer & Data Analyst Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Manthan Jadav - AI/ML Engineer, Data Analyst, and BI Developer specializing in Machine Learning, Computer Vision, Conversational AI, and Business Intelligence.">
+    <meta name="keywords"
+        content="Manthan Jadav, AI Engineer, Machine Learning, Data Analyst, Power BI, Python, Portfolio">
+    <meta name="author" content="Manthan Jadav">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://manthan2110.github.io/Portfolio/">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://manthan2110.github.io/Portfolio/">
+    <meta property="og:title" content="Manthan Jadav | AI/ML Engineer & Data Analyst Portfolio">
+    <meta property="og:description"
+        content="Portfolio of Manthan Jadav - AI/ML Engineer, Data Analyst, and BI Developer specializing in Machine Learning, Computer Vision, Conversational AI, and Business Intelligence.">
+    <meta property="og:image" content="https://manthan2110.github.io/Portfolio/images/User_1.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://manthan2110.github.io/Portfolio/">
+    <meta name="twitter:title" content="Manthan Jadav | AI/ML Engineer & Data Analyst">
+    <meta name="twitter:description" content="Machine Learning, Data Analytics, and AI Solutions Portfolio.">
+    <meta name="twitter:image" content="https://manthan2110.github.io/Portfolio/images/User_1.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5feb58936c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
-             <ul id="side-menu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Top Scroll Progress Line -->
+    <div id="scroll-progress"></div>
+
+    <!-- Floating Glass Island Navbar -->
+    <div class="nav-wrapper">
+        <nav class="nav-island">
+            <a href="#header" class="logo-link">
+                <img src="images/logo.png" alt="Manthan Jadav Portfolio Logo" class="logo">
+            </a>
+            <ul id="side-menu">
+                <li><a href="#header" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-             </ul>
-             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p id="typing-text">Data Analyst</p>
-            <h1>Hi, I'm <span>Manthan</span><br>Jadav From Ahmedabad</h1>
-        </div>
-    </div> 
-</div>
-<!-- ----------------------About-------------------------------------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/User_1.jpg" alt="Manthan Jadav">
+            </ul>
+            <div class="nav-right">
+                <a href="#contact" class="nav-cta-btn">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </div>
-            <div class="about-col-2">
-                <h1 class="Subtitle">About Me</h1>
-                <p>
-                    Hey there! I'm Manthan Jadav, a Computer Science graduate who loves turning raw data and real-world problems into intelligent, scalable solutions. 
-                    I work across AI, ML, Data Analytics, & Automation building everything from predictive models & computer vision systems to 
-                    interactive dashboards & production-ready APIs. I enjoy simplifying complex ideas, creating clean & reliable workflows, and delivering 
-                    measurable impact through technology. Curious by nature and driven by problem-solving, I’m always exploring new tools, improving my craft, & 
-                    building solutions that are practical, efficient, & user-friendly.
-                </p>
+        </nav>
+    </div>
+
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <p id="typing-text">Python Developer</p>
+                <h1>Hi, I'm <span class="name-highlight">Manthan</span><br><span class="hero-line-2">Jadav From Ahmedabad</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------About-------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/User_1.jpg" alt="Manthan Jadav">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Subtitle">About Me</h1>
+                    <p>
+                        Hey there! I'm Manthan Jadav, a Computer Science graduate who loves turning raw data and
+                        real-world problems into intelligent, scalable solutions.
+                        I work across AI, ML, Data Analytics, & Automation building everything from predictive models &
+                        computer vision systems to
+                        interactive dashboards & production-ready APIs. I enjoy simplifying complex ideas, creating
+                        clean & reliable workflows, and delivering
+                        measurable impact through technology. Curious by nature and driven by problem-solving, I’m
+                        always exploring new tools, improving my craft, &
+                        building solutions that are practical, efficient, & user-friendly.
+                    </p>
                     <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab('skills-ai')">AI Skills</p>
-                        <p class="tab-links" onclick="opentab('skills-ml')">ML Skills</p>
-                        <p class="tab-links" onclick="opentab('skills-data')">Data & BI Skills</p>
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills-ai')">AI Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'skills-ml')">ML Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'skills-data')">Data & BI Skills</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills-ai">
                         <ul>
@@ -132,529 +180,641 @@
                             </li>
                         </ul>
                     </div>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ---------------------------------------Work-------------------------------------- -->
-<div id="work">
-    <div class="work-section">
-        <h1 class="Subtitle">
-            <span>My Work</span><br>Experience
-        </h1>
-
-        <div class="work--container container grid">
-            <div class="work--tabs">
-                <!-- Button Experience -->
-                <button class="work-button work-active" data-target="#work-experience">
-                    Experience <i class="fa-thin fa-briefcase"></i>
-                </button>
-
-                <!-- Button-Education -->
-                <button class="work-button" data-target="#work-education">
-                    Education <i class="fa-thin fa-graduation-cap"></i>
-                </button>
-            </div>
-
-            <div class="work--area">
-                <div class="work--line">
-                </div>
-                <!-- Content Experience (renamed id to avoid collision with About section) -->
-                <div class="work--content work-active" data-content id="work-experience">
-                    <div class="work--card">
-                        <div class="work-data">
-                            <div>
-                                <h1 class="work--title">Machine Learning<br> Intern</h1>
-                                <h3 class="work--subtitle">Fxis AI</h3>
-                            </div>
-                            <h2 class="work--year">Jan 2025 - May 2025</h2>
-                        </div>
-
-                        <p class="work--desctiption">
-                            Built AI systems including a high-accuracy face recognition pipeline & a smart chatbot that reduced
-                            manual intervention by 90%. Contributed to Agile sprint delivery & collaborated across teams for 
-                            on-time project execution.
-                        </p>
-                    </div>
-                    <div class="work--card">
-                        <div class="work-data">
-                            <div>
-                                <h1 class="work--title">Data Analyst<br> Intern</h1>
-                                <h3 class="work--subtitle">Infolabz IT Services</h3>
-                            </div>
-
-                            <h2 class="work--year">Jan 2025 - Apr 2025</h2>
-                        </div>
-
-                        <p class="work--desctiption">
-                          Automated API-based ETL pipelines using Python, cutting manual processing by 40–90%. 
-                          Created business dashboards in Power BI and Streamlit to enable instant insights and faster 
-                          decision-making.  
-                        </p>
-                    </div>
-                    <div class="work--card">
-                        <div class="work-data">
-                            <div>
-                                <h1 class="work--title">Python(Django)<br> Trainee</h1>
-                                <h3 class="work--subtitle">Infolabz IT Services</h3>
-                            </div>
-                            <h2 class="work--year">Jun 2024 - Jul 2024</h2>
-                        </div>
-
-                        <p class="work--desctiption">
-                           Worked on backend development using Python and Django, focusing on clean APIs, data handling, and 
-                           scalable web application logic. Contributed to internal tools and automation workflows. 
-                        </p>
-                    </div>
-                    <div class="work--card">
-                        <div class="work-data">
-                            <div>
-                                <h1 class="work--title">Python(Web Scrapping)<br> Trainee</h1>
-                                <h3 class="work--subtitle">PRP Technologies</h3>
-                            </div>
-                            <h2 class="work--year">Jun 2024 - Jul 2024</h2>
-                        </div>
-
-                        <p class="work--desctiption">
-                           Developed automated web-scraping scripts to collect, clean, and structure large-scale data efficiently.
-                            Improved data extraction workflows with Python, BeautifulSoup, and automation techniques. 
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Content Education (renamed id) -->
-                <div class="work--content" data-content id="work-education">
-                    <div class="work--card">
-                        <div class="work-data">
-                            <div>
-                                <h1 class="work--title">Computer Engineering</h1>
-                                <h3 class="work--subtitle">GTU (Gujarat Technical University)</h3>
-                            </div>
-
-                            <h2 class="work--year">2021-2025</h2>
-                        </div>
-
-                        <p class="work--desctiption">
-                            Graduated with strong fundamentals in computer science, algorithms, and data structures. 
-                            Specialized in AI/ML and software development with hands-on projects in data analysis and web applications.
-                        </p>
-                    </div>
-                    <div class="work--card">
-                        <div class="work-data">
-                            <div>
-                                <h1 class="work--title">Higher Secondary Education</h1>
-                                <h3 class="work--subtitle">A.B. School, Navsari</h3>
-                            </div>
-
-                            <h2 class="work--year">2018-2020</h2>
-                        </div>
-
-                        <p class="work--desctiption">
-                            Completed Higher Secondary with focus on Science Maths stream. Developed strong analytical and problem-solving skills 
-                            that laid the foundation for pursuing engineering.
-                        </p>
-                    </div>
-                    <div class="work--card">
-                        <div class="work-data">
-                            <div>
-                                <h1 class="work--title">Secondary School Education</h1>
-                                <h3 class="work--subtitle">SIGV School, Chikhali</h3>
-                            </div>
-
-                            <h2 class="work--year">2016-2018</h2>
-                        </div>
-
-                        <p class="work--desctiption">
-                            Completed secondary education with a balanced curriculum covering academics, sports, and co-curricular activities. 
-                            Developed leadership skills and academic excellence.
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- ---------------------------------------Skills Icons-------------------------------------- -->
-<div id="skills-icons">
-    <div class="skills-icons-container">
-        <i class="fab fa-python" title="Python"></i>
-        <i class="fas fa-database" title="SQL"></i>
-        <i class="fas fa-chart-bar" title="Power BI"></i>
-        <i class="fas fa-file-excel" title="Excel"></i>
-        <i class="fas fa-robot" title="Machine Learning"></i>
-        <i class="fas fa-brain" title="Deep Learning"></i>
-        <i class="fas fa-project-diagram" title="ETL"></i>
-        <i class="fas fa-chart-pie" title="Data Visualization"></i>
-        <i class="fas fa-code" title="Programming"></i>
-        <i class="fas fa-cloud" title="Cloud"></i>
+    <!-- ---------------------------------------Work-------------------------------------- -->
+    <div id="work">
+        <div class="work-section">
+            <h1 class="Subtitle">
+                <span>My Work</span><br>Experience
+            </h1>
 
-        <i class="fab fa-python" title="Python"></i>
-        <i class="fas fa-database" title="SQL"></i>
-        <i class="fas fa-chart-bar" title="Power BI"></i>
-        <i class="fas fa-file-excel" title="Excel"></i>
-        <i class="fas fa-robot" title="Machine Learning"></i>
-        <i class="fas fa-brain" title="Deep Learning"></i>
-        <i class="fas fa-project-diagram" title="ETL"></i>
-        <i class="fas fa-chart-pie" title="Data Visualization"></i>
-        <i class="fas fa-code" title="Programming"></i>
-        <i class="fas fa-cloud" title="Cloud"></i>
+            <div class="work--container container grid">
+                <div class="work--tabs">
+                    <!-- Button Experience -->
+                    <button class="work-button work-active" data-target="#work-experience">
+                        Experience <i class="fa-solid fa-briefcase"></i>
+                    </button>
 
-        <i class="fab fa-python" title="Python"></i>
-        <i class="fas fa-database" title="SQL"></i>
-        <i class="fas fa-chart-bar" title="Power BI"></i>
-        <i class="fas fa-file-excel" title="Excel"></i>
-        <i class="fas fa-robot" title="Machine Learning"></i>
-        <i class="fas fa-brain" title="Deep Learning"></i>
-        <i class="fas fa-project-diagram" title="ETL"></i>
-        <i class="fas fa-chart-pie" title="Data Visualization"></i>
-        <i class="fas fa-code" title="Programming"></i>
-        <i class="fas fa-cloud" title="Cloud"></i>
-
-        <i class="fab fa-python" title="Python"></i>
-        <i class="fas fa-database" title="SQL"></i>
-        <i class="fas fa-chart-bar" title="Power BI"></i>
-        <i class="fas fa-file-excel" title="Excel"></i>
-        <i class="fas fa-robot" title="Machine Learning"></i>
-        <i class="fas fa-brain" title="Deep Learning"></i>
-        <i class="fas fa-project-diagram" title="ETL"></i>
-        <i class="fas fa-chart-pie" title="Data Visualization"></i>
-        <i class="fas fa-code" title="Programming"></i>
-        <i class="fas fa-cloud" title="Cloud"></i>
-    </div>
-</div>
-<!-- ---------------------------------------Services-------------------------------------- -->
-<div id="services">
-    <div class="container">
-        <h1 class="Subtitle">My <span>Services</span></h1>
-        
-        <!-- First Row -->
-        <div class="services-row">
-            <div class="service">
-                <i class="fa-brands fa-app-store"></i>
-                <h2>End-to-End Machine Learning & AI Solutions</h2>
-                <p>From designing predictive models to deploying AI systems, I develop solutions for real-world problems such as disease diagnosis, recommendation systems, and trend prediction. I handle data preprocessing, model building, and deployment for actionable, automated insights.</p>
-                <a href="#" data-modal-target="ml-modal">Learn More</a>
-            </div>
-
-            <div class="service">
-                <i class="fa-solid fa-chart-simple"></i>
-                <h2>Data Analysis & Business Intelligence</h2>
-                <p>I help businesses and individuals make data-driven decisions by analyzing and visualizing data through interactive dashboards, reports, and insights. Tools include Power BI, Excel, and Streamlit to convert raw data into meaningful, actionable intelligence.</p>
-                <a href="#" data-modal-target="da-modal">Learn More</a>
-            </div>
-
-            <div class="service">
-                <i class="fa-brands fa-bots"></i>
-                <h2>AI-Powered Chatbot Development</h2>
-                <p>Designing intelligent chatbots for customer support, food ordering, FAQs, or virtual assistants. These bots, built with Dialogflow or custom NLP models, improve engagement, reduce manual effort, and operate 24/7 across web or messaging platforms.</p>
-                <a href="#" data-modal-target="chatbot-modal">Learn More</a>
-            </div>
-        </div>
-
-        <!-- Second Row -->
-        <div class="services-row">
-            <div class="service">
-                <i class="fa-solid fa-eye"></i>
-                <h2>Computer Vision & Image Processing</h2>
-                <p>Implement CV solutions for face detection, object recognition, and image-based analytics. Applications include healthcare imaging, automated quality checks, and intelligent visual detection systems using OpenCV, Python, and deep learning models.</p>
-                <a href="#" data-modal-target="cv-modal">Learn More</a>
-            </div>
-
-            <div class="service">
-                <i class="fa-solid fa-robot"></i>
-                <h2>AI & Workflow Automations</h2>
-                <p>Automate repetitive tasks and business workflows using AI, Python scripts, or custom automation pipelines. From resume parsing to document summarization or predictive analytics pipelines, I create systems that save time and enhance operational efficiency.</p>
-                <a href="#" data-modal-target="automation-modal">Learn More</a>
-            </div>
-
-            <div class="service">
-                <i class="fa-solid fa-lightbulb"></i>
-                <h2>Recommendation Engines</h2>
-                <p>Build intelligent recommendation systems for books, movies, restaurants, or products. Using collaborative filtering, content-based filtering, and hybrid models, I deliver personalized suggestions to enhance user experience and engagement.</p>
-                <a href="#" data-modal-target="recommender-modal">Learn More</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="modal" id="ml-modal">
-    <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <h2>End-to-End Machine Learning Solutions</h2>
-        <p>I offer comprehensive machine learning services, from initial concept to a fully deployed model. My process is designed to deliver robust, scalable, and impactful solutions that drive business value.</p>
-        <ul>
-            <li><strong>Data Collection & Preprocessing:</strong> Gathering and cleaning raw data to create a high-quality dataset for model training.</li>
-            <li><strong>Feature Engineering:</strong> Creating meaningful features from the data to improve model accuracy and performance.</li>
-            <li><strong>Model Selection & Training:</strong> Choosing the right algorithms (like Regression, Classification, Clustering) and training them on your data.</li>
-            <li><strong>Model Evaluation:</strong> Rigorously testing the model's performance using various metrics to ensure it meets business objectives.</li>
-            <li><strong>Deployment & Integration:</strong> Deploying the trained model into your production environment, often as a REST API for easy integration.</li>
-            <li><strong>Monitoring & Maintenance:</strong> Continuously monitoring model performance and retraining it as needed to maintain accuracy.</li>
-        </ul>
-        <a href="#contact" class="btn btn2 modal-contact-btn">Get in Touch</a>
-    </div>
-</div>
-
-<div class="modal" id="da-modal">
-    <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <h2>Data Analysis & Visualization</h2>
-        <p>I transform complex datasets into clear and compelling stories. By creating interactive dashboards and in-depth reports, I empower you to make informed, data-driven decisions confidently.</p>
-        <ul>
-            <li><strong>Exploratory Data Analysis (EDA):</strong> Digging deep into your data to uncover hidden patterns, trends, and outliers.</li>
-            <li><strong>Interactive Dashboards:</strong> Building dynamic and user-friendly dashboards in Power BI and other tools to track KPIs in real-time.</li>
-            <li><strong>Data Storytelling:</strong> Communicating insights effectively through visualizations that are easy to understand for any audience.</li>
-            <li><strong>Custom Reports:</strong> Generating detailed reports on sales, customer behavior, financial performance, or any other area of your business.</li>
-            <li><strong>Data Modeling:</strong> Designing robust data models with optimized relationships, hierarchies, and calculated tables for better performance and scalability.</li>
-            <li><strong>DAX (Data Analysis Expressions):</strong> Writing advanced DAX measures and calculated columns to support powerful analytical capabilities in Power BI.</li>
-            <li><strong>M Language (Power Query):</strong> Leveraging M language for efficient data transformation, cleaning, and shaping within Power BI and Excel.</li>
-        </ul>
-        <a href="#contact" class="btn btn2 modal-contact-btn">Get in Touch</a>
-    </div>
-</div>
-
-
-<div class="modal" id="chatbot-modal">
-    <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <h2>AI-Powered Chatbot Development</h2>
-        <p>Leverage the power of conversational AI to enhance customer engagement and automate tasks. I build intelligent chatbots that provide instant support and streamline operations, 24/7.</p>
-        <ul>
-            <li><strong>Custom Chatbot Design:</strong> Designing conversation flows that are natural, intuitive, and aligned with your business goals.</li>
-            <li><strong>NLU/NLP Integration:</strong> Using tools like Google Dialogflow to enable the chatbot to understand and respond to user queries accurately.</li>
-            <li><strong>Use-Case Implementation:</strong> Developing bots for various applications, including customer support, lead generation, appointment booking, and more.</li>
-            <li><strong>Platform Integration:</strong> Seamlessly integrating the chatbot into your website, social media channels, or other messaging platforms.</li>
-        </ul>
-        <a href="#contact" class="btn btn2 modal-contact-btn">Get in Touch</a>
-    </div>
-</div>
-
-<div class="modal" id="cv-modal">
-    <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <h2>Computer Vision & Image Processing</h2>
-        <p>Deliver computer-vision systems that convert images and video into actionable intelligence for automation, inspection, analytics, and user-facing features.</p>
-        <ul>
-            <li><strong>Capabilities:</strong> object & face detection, landmark/feature extraction, segmentation, image enhancement, annotation pipelines, and real‑time video processing.</li>
-            <li><strong>Typical deliverables:</strong> trained models (PyTorch / TensorFlow), optimized inference artifacts (ONNX, TensorRT), preprocessing & augmentation pipelines, and lightweight inference services (Flask / FastAPI / Streamlit).</li>
-            <li><strong>Integration & deployment:</strong> containerized REST endpoints, edge deployment options, browser-friendly demos, and simple dashboards for validation and monitoring.</li>
-            <li><strong>Quality & evaluation:</strong> precision/recall, mAP, confusion matrices, and human-in-the-loop annotation workflows to improve model quality and reduce false positives.</li>
-            <li><strong>Business impact:</strong> automated visual QA, faster annotation, reduced manual review time, improved detection accuracy for operational tasks, and prototype-ready demos for stakeholder validation.</li>
-        </ul>
-        <a href="#contact" class="btn btn2 modal-contact-btn">Get in Touch</a>
-    </div>
-</div>
-
-<div class="modal" id="automation-modal">
-    <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <h2>AI & Workflow Automations</h2>
-        <p>Design and deliver automation pipelines that reduce repetitive work, speed decision cycles, and integrate AI where it adds the most value.</p>
-        <ul>
-            <li><strong>Use cases:</strong> data ingestion & ETL, document processing (OCR, entity extraction), automated reporting, resume parsing, alerting & scheduling workflows.</li>
-            <li><strong>Technical approach:</strong> robust ETL pipelines (Python, Pandas), orchestration (Airflow / cron), REST APIs (Flask / FastAPI), and lightweight front-ends or dashboards for operations and monitoring.</li>
-            <li><strong>Deliverables:</strong> reproducible data pipelines, automation scripts, deployment-ready services, logging/monitoring hooks, and simple operator UIs for control and audit.</li>
-            <li><strong>Reliability & maintenance:</strong> retry strategies, idempotent jobs, unit tests for core transformations, and documentation for handover and scaling.</li>
-            <li><strong>Business impact:</strong> time savings, fewer manual errors, faster hiring/processing cycles, and self-serve analytics for non-technical stakeholders.</li>
-        </ul>
-        <a href="#contact" class="btn btn2 modal-contact-btn">Get in Touch</a>
-    </div>
-</div>
-
-<div class="modal" id="recommender-modal">
-    <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <h2>Recommendation Engines</h2>
-        <p>Build recommendation systems that increase engagement and conversions using collaborative, content‑based, and hybrid strategies tuned to your data and product needs.</p>
-        <ul>
-            <li><strong>Approaches:</strong> collaborative filtering, content‑based similarity (TF‑IDF / embeddings), matrix factorization, and hybrid pipelines combining signals for robust recommendations.</li>
-            <li><strong>Deliverables:</strong> offline training pipelines, evaluation suites (precision/recall, MAP), lightweight online inference endpoints, and demo UIs for stakeholder review.</li>
-            <li><strong>Production concerns:</strong> feature stores for user/item features, caching & low‑latency APIs, A/B testing plans, and strategies for cold‑start items/users.</li>
-            <li><strong>Tools & infra:</strong> Python, scikit‑learn, implicit/matrix factorization libs, similarity/embedding tooling, and Streamlit or web endpoints for demos.</li>
-            <li><strong>Business impact:</strong> improved personalization, higher retention & conversion, and measurable uplift through testable rollout plans.</li>
-        </ul>
-        <a href="#contact" class="btn btn2 modal-contact-btn">Get in Touch</a>
-    </div>
-</div>
-
-
-<!-- ---------------------Portfolio-------------------------------------- -->
-<div id="portfolio"> 
-    <div class="container">
-        <h1 class="Subtitle" style="margin-bottom: 30px;">My <span>Projects</span></h1>
-        <div class="portfolio-filters tab-title">
-            <p class="tab-links active-link" data-filter="all">All</p>
-            <p class="tab-links" data-filter="ml">ML</p>
-            <p class="tab-links" data-filter="dashboard">Dashboard</p>
-            <p class="tab-links" data-filter="chatbot">Chatbot</p>
-            <p class="tab-links" data-filter="ai">Advanced AI</p>
-        </div>
-        <div class="work-list">
-            <div class="work" data-tag="ml">
-                <img src="images/Disease_Detection.webp">
-                <div class="layer">
-                    <h2>Smart Healthcare Hub</h2>
-                    <p>🔬 Take charge of your health with this ML-powered Disease Diagnosis Web App!<br>
-                        From smart predictions (Diabetes, Heart, Cancer, Viral) to chatbot advice and lifestyle tips 
-                        it’s your personal health buddy with a sleek UI and AI brains with smart healthy diet plan, 
-                        all built with Flask and open-source love!</p>
-                    <a href="https://github.com/Manthan2110/Flask-Healthcare-Hub" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <!-- Button-Education -->
+                    <button class="work-button" data-target="#work-education">
+                        Education <i class="fa-solid fa-graduation-cap"></i>
+                    </button>
                 </div>
-            </div>
-            <div class="work" data-tag="chatbot">
-                <img src="images/Food_Bot.webp">
-                <div class="layer">
-                    <h2 style="margin-bottom: 0px;">Snacky</h2><h3>AI-Powered Food Service Chatbot</h3>
-                    <p>This project is my final year project in college. I developed and deployed a Dialogflow-based chatbot to automate 90% of customer interactions for an 
-                    online food delivery service, reducing support workload and increasing order completions by 30% through
-                     data-driven response optimization.</p>
-                    <a href="https://github.com/Manthan2110/Snacky-Ai-based-food-Service-chatbot" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work" data-tag="ai">
-                <img src="images/Dark_Spots.webp">
-                <div class="layer">
-                    <h2>Face Dark Spots &<br> Eyes Detection</h2>
-                    <p>A computer vision application using OpenCV that detects faces, eyes, and dark spots under the eyes. 
-                    It includes severity grading and annotated outputs, making it useful for cosmetic analysis, medical imaging, 
-                    or AI-based face preprocessing tasks.</p>
-                    <a href="https://face-dark-spot-detection.streamlit.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work hidden-work" data-tag="ml">
-                <img src="images/Books.webp">
-                <div class="layer">
-                    <h2 style="margin-bottom: 0px;">BookVerse</h2><h3>AI-Powered Reading Companion</h3>
-                    <p>Unleash your inner bookworm with this ML-powered Book Recommendation Web App! Built for curious readers, 
-                        it smartly suggests your next favorite read stylish UI, witty surprises, and open-source magic all rolled into one!.</p>
-                    <a href="https://github.com/Manthan2110/ContentBased-Movie-Recommender" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work hidden-work" data-tag="dashboard">
-                <img src="images/Hospital.webp">
-                <div class="layer">
-                    <h3>Hospital Managment Dashboard</h3>
-                    <p>This end-to-end BI project visualizes operational data of a hospital using
-                     Power BI. It provides a view of hospital performance across departments such as Patient Care, 
-                     Doctor Management, Hospital Operations, & Financial Analytics. The goal was to build a 
-                     dashboard that enables healthcare admin to make data-driven decisions.</p>
-                    <a href="https://hospital-managment-dashboard.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work hidden-work" data-tag="dashboard">
-                <img src="images/Blinkit.webp">
-                <div class="layer">
-                    <h2>Blinkit Business Intelligence Dashboard</h2>
-                    <p>An interactive Power BI dashboard designed to analyze Blinkit's operational data, 
-                    uncovering insights on sales trends, product performance, inventory bottlenecks, and regional growth. 
-                    It empowers data-driven decision-making to optimize operations and boost revenue.</p>
-                    <a href="https://blinkitdashboard.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work hidden-work" data-tag="dashboard">
-                <img src="images/Weather.webp">
-                <div class="layer">
-                    <h2>Weather Dashboard</h2>
-                    <p>This end-to-end BI project visualizes operational data of a hospital using
-                     Power BI. It provides a view of hospital performance across departments such as Patient Care, 
-                     Doctor Management, Hospital Operations, & Financial Analytics. The goal was to build a 
-                     dashboard that enables healthcare admin to make data-driven decisions.</p>
-                    <a href="https://hospital-managment-dashboard.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work hidden-work" data-tag="ai">
-                <img src="images/Summarizer.webp">
-                <div class="layer">
-                    <h2 style="margin-bottom: 0px;">LiteNote</h2><h3>AI Summarizer for YouTube & Docs</h3>
-                    <p>An AI-powered productivity tool that summarizes long videos, articles, and documents into concise, 
-                    actionable notes. Built with Streamlit and Google Gemini, LiteNote allows users to quickly capture insights, 
-                    save time, and focus on the most important content.</p>
-                    <a href="https://litenote-a-smart-content-summarizer.streamlit.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work" data-tag="ml">
-                <img src="images/FlavorFinder.webp">
-                <div class="layer">
-                    <h2 style="margin-bottom: 0px;">FlavorFinder</h2><h3>Restaurant Recommendation</h3>
-                    <p>An AI-powered smart food discovery app that provides personalized restaurant recommendations based on
-                    cuisine, location, ratings, and user preferences. Built with Streamlit and collaborative filtering, 
-                    it helps users discover trending, highly-rated, and tailored dining options effortlessly.</p>
-                    <a href="https://github.com/Manthan2110/FlavorFinder" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work hidden-work" data-tag="ai">
-                <img src="images/Resume.webp">
-                <div class="layer">
-                    <h2 style="margin-bottom: 0px;">ResumeHub</h2><h3>AI-Powered Resume Parser & Matcher</h3>
-                    <p>An AI-driven recruiting assistant that parses resumes, extracts structured data, and matches 
-                    candidates to job descriptions using Google Gemini and TF-IDF semantic similarity. It helps recruiters
-                    save time, detect missing keywords, and improve hiring efficiency with a clean, modern UI.</p>
-                    <a href="https://github.com/Manthan2110/Talent-Match-AI" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work hidden-work" data-tag="ai">
-                <img src="images/AskDB.png">
-                <div class="layer">
-                    <h2 style="margin-bottom: 0px;">AskDB</h2><h3>AI-Powered SQL Assistant</h3>
-                    <p>AskDB is an intelligent web app that lets users query databases in plain English using LLMs. 
-                    Built with Flask and TailwindCSS, it automatically converts natural language into SQL, executes queries, and 
-                    visualizes the results with interactive analytics making data exploration effortless for both technical and 
-                    non-technical users.</p>
-                    <a href="https://github.com/Manthan2110/AskDB-AI-SQL-Assistant" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work hidden-work" data-tag="ai">
-                <img src="images/Gemini_Generated_Image_isqhc0isqhc0isqh.png">
-                <div class="layer">
-                    <h2 style="margin-bottom: 0px;">Pix2Caption</h2><h3>Image Caption Generator</h3>
-                    <p>Pix2Caption is an image-to-text system that uses a pretrained CNN encoder and an LSTM decoder
-                    to generate natural language captions for photos. A custom data generator handles preprocessing and 
-                    batching, enabling training on large image–caption datasets to produce descriptive, human-like captions
-                    automatically.</p>
-                    <a href="https://pix2caption-image-captioning.streamlit.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                <div class="work--area">
+                    <div class="work--line">
+                    </div>
+                    <!-- Content Experience (renamed id to avoid collision with About section) -->
+                    <div class="work--content work-active" data-content id="work-experience">
+                        <div class="work--card">
+                            <div class="work-data">
+                                <div>
+                                    <h1 class="work--title">Junior Software<br> Engineer</h1>
+                                    <h3 class="work--subtitle">The One Technologies · Full-time</h3>
+                                </div>
+                                <h2 class="work--year">Jan 2026 - Present</h2>
+                            </div>
+
+                            <p class="work--desctiption">
+                                Developing real-world software applications across backend, frontend, REST APIs, and database layers using C#, ASP.NET Core, Angular, and SQL. Addressing application security findings (XSS/HTML injection vulnerabilities), collaborating with QA workflows, resolving Jira sprint tasks, and leveraging CI/CD pipelines alongside AI-assisted development tools.
+                            </p>
+                        </div>
+                        <div class="work--card">
+                            <div class="work-data">
+                                <div>
+                                    <h1 class="work--title">Machine Learning<br> Intern</h1>
+                                    <h3 class="work--subtitle">Fxis AI</h3>
+                                </div>
+                                <h2 class="work--year">Jan 2025 - May 2025</h2>
+                            </div>
+
+                            <p class="work--desctiption">
+                                Built AI systems including a high-accuracy face recognition pipeline & a smart chatbot
+                                that reduced
+                                manual intervention by 90%. Contributed to Agile sprint delivery & collaborated across
+                                teams for
+                                on-time project execution.
+                            </p>
+                        </div>
+                        <div class="work--card">
+                            <div class="work-data">
+                                <div>
+                                    <h1 class="work--title">Data Analyst<br> Intern</h1>
+                                    <h3 class="work--subtitle">Infolabz IT Services</h3>
+                                </div>
+
+                                <h2 class="work--year">June 2025 - Dec 2025</h2>
+                            </div>
+
+                            <p class="work--desctiption">
+                                Automated API-based ETL pipelines using Python, cutting manual processing by 40–90%.
+                                Created business dashboards in Power BI and Streamlit to enable instant insights and
+                                faster
+                                decision-making.
+                            </p>
+                        </div>
+                        <div class="work--card">
+                            <div class="work-data">
+                                <div>
+                                    <h1 class="work--title">Python(Django)<br> Trainee</h1>
+                                    <h3 class="work--subtitle">Infolabz IT Services</h3>
+                                </div>
+                                <h2 class="work--year">Jun 2024 - Jul 2024</h2>
+                            </div>
+
+                            <p class="work--desctiption">
+                                Worked on backend development using Python and Django, focusing on clean APIs, data
+                                handling, and
+                                scalable web application logic. Contributed to internal tools and automation workflows.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Content Education (renamed id) -->
+                    <div class="work--content" data-content id="work-education">
+                        <div class="work--card">
+                            <div class="work-data">
+                                <div>
+                                    <h1 class="work--title">Computer Engineering</h1>
+                                    <h3 class="work--subtitle">GTU (Gujarat Technical University)</h3>
+                                </div>
+
+                                <h2 class="work--year">2021-2025</h2>
+                            </div>
+
+                            <p class="work--desctiption">
+                                Graduated with strong fundamentals in computer science, algorithms, and data structures.
+                                Specialized in AI/ML and software development with hands-on projects in data analysis
+                                and web applications.
+                            </p>
+                        </div>
+                        <div class="work--card">
+                            <div class="work-data">
+                                <div>
+                                    <h1 class="work--title">Higher Secondary Education</h1>
+                                    <h3 class="work--subtitle">A.B. School, Navsari</h3>
+                                </div>
+
+                                <h2 class="work--year">2018-2020</h2>
+                            </div>
+
+                            <p class="work--desctiption">
+                                Completed Higher Secondary with focus on Science Maths stream. Developed strong
+                                analytical and problem-solving skills
+                                that laid the foundation for pursuing engineering.
+                            </p>
+                        </div>
+                        <div class="work--card">
+                            <div class="work-data">
+                                <div>
+                                    <h1 class="work--title">Secondary School Education</h1>
+                                    <h3 class="work--subtitle">SIGV School, Chikhali</h3>
+                                </div>
+
+                                <h2 class="work--year">2016-2018</h2>
+                            </div>
+
+                            <p class="work--desctiption">
+                                Completed secondary education with a balanced curriculum covering academics, sports, and
+                                co-curricular activities.
+                                Developed leadership skills and academic excellence.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn" id="seeMoreBtn">See More</a>
     </div>
-</div>
-<!-- ---------------------------Contact Us---------------------------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="Subtitle">Contact <span>Me</span></h1>
-                <p><i class="fa-solid fa-paper-plane"></i> mathanjadav746@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> +91-9313039112</p>
-                <div class="social-icons">
-                    <a href="https://wa.me/9313039112"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://www.linkedin.com/in/manthanjadav/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Manthan2110" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://t.me/ManthanJadav" target="_blank"><i class="fa-brands fa-telegram"></i></i></a>
+
+    <!-- ---------------------------------------Skills Icons-------------------------------------- -->
+    <div id="skills-icons">
+        <div class="skills-icons-container">
+            <i class="fab fa-python" title="Python"></i>
+            <i class="fas fa-database" title="SQL"></i>
+            <i class="fas fa-chart-bar" title="Power BI"></i>
+            <i class="fas fa-file-excel" title="Excel"></i>
+            <i class="fas fa-robot" title="Machine Learning"></i>
+            <i class="fas fa-brain" title="Deep Learning"></i>
+            <i class="fas fa-project-diagram" title="ETL"></i>
+            <i class="fas fa-chart-pie" title="Data Visualization"></i>
+            <i class="fas fa-code" title="Programming"></i>
+            <i class="fas fa-cloud" title="Cloud"></i>
+
+            <i class="fab fa-python" title="Python"></i>
+            <i class="fas fa-database" title="SQL"></i>
+            <i class="fas fa-chart-bar" title="Power BI"></i>
+            <i class="fas fa-file-excel" title="Excel"></i>
+            <i class="fas fa-robot" title="Machine Learning"></i>
+            <i class="fas fa-brain" title="Deep Learning"></i>
+            <i class="fas fa-project-diagram" title="ETL"></i>
+            <i class="fas fa-chart-pie" title="Data Visualization"></i>
+            <i class="fas fa-code" title="Programming"></i>
+            <i class="fas fa-cloud" title="Cloud"></i>
+
+            <i class="fab fa-python" title="Python"></i>
+            <i class="fas fa-database" title="SQL"></i>
+            <i class="fas fa-chart-bar" title="Power BI"></i>
+            <i class="fas fa-file-excel" title="Excel"></i>
+            <i class="fas fa-robot" title="Machine Learning"></i>
+            <i class="fas fa-brain" title="Deep Learning"></i>
+            <i class="fas fa-project-diagram" title="ETL"></i>
+            <i class="fas fa-chart-pie" title="Data Visualization"></i>
+            <i class="fas fa-code" title="Programming"></i>
+            <i class="fas fa-cloud" title="Cloud"></i>
+
+            <i class="fab fa-python" title="Python"></i>
+            <i class="fas fa-database" title="SQL"></i>
+            <i class="fas fa-chart-bar" title="Power BI"></i>
+            <i class="fas fa-file-excel" title="Excel"></i>
+            <i class="fas fa-robot" title="Machine Learning"></i>
+            <i class="fas fa-brain" title="Deep Learning"></i>
+            <i class="fas fa-project-diagram" title="ETL"></i>
+            <i class="fas fa-chart-pie" title="Data Visualization"></i>
+            <i class="fas fa-code" title="Programming"></i>
+            <i class="fas fa-cloud" title="Cloud"></i>
+        </div>
+    </div>
+    <!-- ---------------------------------------Services-------------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="Subtitle">My <span>Services</span></h1>
+
+            <!-- First Row -->
+            <div class="services-row">
+                <div class="service">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>End-to-End Machine Learning & AI Solutions</h2>
+                    <p>From designing predictive models to deploying AI systems, I develop solutions for real-world
+                        problems such as disease diagnosis, recommendation systems, and trend prediction. I handle data
+                        preprocessing, model building, and deployment for actionable, automated insights.</p>
+                    <a href="#" data-modal-target="ml-modal">Learn More</a>
                 </div>
-                <a href="images/Resume.pdf" target="_blank" class="btn btn2">Download CV</a>
+
+                <div class="service">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Data Analysis & Business Intelligence</h2>
+                    <p>I help businesses and individuals make data-driven decisions by analyzing and visualizing data
+                        through interactive dashboards, reports, and insights. Tools include Power BI, Excel, and
+                        Streamlit to convert raw data into meaningful, actionable intelligence.</p>
+                    <a href="#" data-modal-target="da-modal">Learn More</a>
+                </div>
+
+                <div class="service">
+                    <i class="fa-brands fa-bots"></i>
+                    <h2>AI-Powered Chatbot Development</h2>
+                    <p>Designing intelligent chatbots for customer support, food ordering, FAQs, or virtual assistants.
+                        These bots, built with Dialogflow or custom NLP models, improve engagement, reduce manual
+                        effort, and operate 24/7 across web or messaging platforms.</p>
+                    <a href="#" data-modal-target="chatbot-modal">Learn More</a>
+                </div>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <input type="text" name="Subject" placeholder="Your Subject" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+
+            <!-- Second Row -->
+            <div class="services-row">
+                <div class="service">
+                    <i class="fa-solid fa-eye"></i>
+                    <h2>Computer Vision & Image Processing</h2>
+                    <p>Implement CV solutions for face detection, object recognition, and image-based analytics.
+                        Applications include healthcare imaging, automated quality checks, and intelligent visual
+                        detection systems using OpenCV, Python, and deep learning models.</p>
+                    <a href="#" data-modal-target="cv-modal">Learn More</a>
+                </div>
+
+                <div class="service">
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>AI & Workflow Automations</h2>
+                    <p>Automate repetitive tasks and business workflows using AI, Python scripts, or custom automation
+                        pipelines. From resume parsing to document summarization or predictive analytics pipelines, I
+                        create systems that save time and enhance operational efficiency.</p>
+                    <a href="#" data-modal-target="automation-modal">Learn More</a>
+                </div>
+
+                <div class="service">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h2>Recommendation Engines</h2>
+                    <p>Build intelligent recommendation systems for books, movies, restaurants, or products. Using
+                        collaborative filtering, content-based filtering, and hybrid models, I deliver personalized
+                        suggestions to enhance user experience and engagement.</p>
+                    <a href="#" data-modal-target="recommender-modal">Learn More</a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="copyright">
-        <p>Copyright © Manthan. Made with <i class="fa-solid fa-heart"></i> </p>
+
+
+    <div class="modal" id="ml-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>End-to-End Machine Learning Solutions</h2>
+            <p>I offer comprehensive machine learning services, from initial concept to a fully deployed model. My
+                process is designed to deliver robust, scalable, and impactful solutions that drive business value.</p>
+            <ul>
+                <li><strong>Data Collection & Preprocessing:</strong> Gathering and cleaning raw data to create a
+                    high-quality dataset for model training.</li>
+                <li><strong>Feature Engineering:</strong> Creating meaningful features from the data to improve model
+                    accuracy and performance.</li>
+                <li><strong>Model Selection & Training:</strong> Choosing the right algorithms (like Regression,
+                    Classification, Clustering) and training them on your data.</li>
+                <li><strong>Model Evaluation:</strong> Rigorously testing the model's performance using various metrics
+                    to ensure it meets business objectives.</li>
+                <li><strong>Deployment & Integration:</strong> Deploying the trained model into your production
+                    environment, often as a REST API for easy integration.</li>
+                <li><strong>Monitoring & Maintenance:</strong> Continuously monitoring model performance and retraining
+                    it as needed to maintain accuracy.</li>
+            </ul>
+            <a href="#contact" class="btn btn2 modal-contact-btn">Get in Touch</a>
+        </div>
     </div>
-</div>
+
+    <div class="modal" id="da-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Data Analysis & Visualization</h2>
+            <p>I transform complex datasets into clear and compelling stories. By creating interactive dashboards and
+                in-depth reports, I empower you to make informed, data-driven decisions confidently.</p>
+            <ul>
+                <li><strong>Exploratory Data Analysis (EDA):</strong> Digging deep into your data to uncover hidden
+                    patterns, trends, and outliers.</li>
+                <li><strong>Interactive Dashboards:</strong> Building dynamic and user-friendly dashboards in Power BI
+                    and other tools to track KPIs in real-time.</li>
+                <li><strong>Data Storytelling:</strong> Communicating insights effectively through visualizations that
+                    are easy to understand for any audience.</li>
+                <li><strong>Custom Reports:</strong> Generating detailed reports on sales, customer behavior, financial
+                    performance, or any other area of your business.</li>
+                <li><strong>Data Modeling:</strong> Designing robust data models with optimized relationships,
+                    hierarchies, and calculated tables for better performance and scalability.</li>
+                <li><strong>DAX (Data Analysis Expressions):</strong> Writing advanced DAX measures and calculated
+                    columns to support powerful analytical capabilities in Power BI.</li>
+                <li><strong>M Language (Power Query):</strong> Leveraging M language for efficient data transformation,
+                    cleaning, and shaping within Power BI and Excel.</li>
+            </ul>
+            <a href="#contact" class="btn btn2 modal-contact-btn">Get in Touch</a>
+        </div>
+    </div>
+
+
+    <div class="modal" id="chatbot-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>AI-Powered Chatbot Development</h2>
+            <p>Leverage the power of conversational AI to enhance customer engagement and automate tasks. I build
+                intelligent chatbots that provide instant support and streamline operations, 24/7.</p>
+            <ul>
+                <li><strong>Custom Chatbot Design:</strong> Designing conversation flows that are natural, intuitive,
+                    and aligned with your business goals.</li>
+                <li><strong>NLU/NLP Integration:</strong> Using tools like Google Dialogflow to enable the chatbot to
+                    understand and respond to user queries accurately.</li>
+                <li><strong>Use-Case Implementation:</strong> Developing bots for various applications, including
+                    customer support, lead generation, appointment booking, and more.</li>
+                <li><strong>Platform Integration:</strong> Seamlessly integrating the chatbot into your website, social
+                    media channels, or other messaging platforms.</li>
+            </ul>
+            <a href="#contact" class="btn btn2 modal-contact-btn">Get in Touch</a>
+        </div>
+    </div>
+
+    <div class="modal" id="cv-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Computer Vision & Image Processing</h2>
+            <p>Deliver computer-vision systems that convert images and video into actionable intelligence for
+                automation, inspection, analytics, and user-facing features.</p>
+            <ul>
+                <li><strong>Capabilities:</strong> object & face detection, landmark/feature extraction, segmentation,
+                    image enhancement, annotation pipelines, and real‑time video processing.</li>
+                <li><strong>Typical deliverables:</strong> trained models (PyTorch / TensorFlow), optimized inference
+                    artifacts (ONNX, TensorRT), preprocessing & augmentation pipelines, and lightweight inference
+                    services (Flask / FastAPI / Streamlit).</li>
+                <li><strong>Integration & deployment:</strong> containerized REST endpoints, edge deployment options,
+                    browser-friendly demos, and simple dashboards for validation and monitoring.</li>
+                <li><strong>Quality & evaluation:</strong> precision/recall, mAP, confusion matrices, and
+                    human-in-the-loop annotation workflows to improve model quality and reduce false positives.</li>
+                <li><strong>Business impact:</strong> automated visual QA, faster annotation, reduced manual review
+                    time, improved detection accuracy for operational tasks, and prototype-ready demos for stakeholder
+                    validation.</li>
+            </ul>
+            <a href="#contact" class="btn btn2 modal-contact-btn">Get in Touch</a>
+        </div>
+    </div>
+
+    <div class="modal" id="automation-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>AI & Workflow Automations</h2>
+            <p>Design and deliver automation pipelines that reduce repetitive work, speed decision cycles, and integrate
+                AI where it adds the most value.</p>
+            <ul>
+                <li><strong>Use cases:</strong> data ingestion & ETL, document processing (OCR, entity extraction),
+                    automated reporting, resume parsing, alerting & scheduling workflows.</li>
+                <li><strong>Technical approach:</strong> robust ETL pipelines (Python, Pandas), orchestration (Airflow /
+                    cron), REST APIs (Flask / FastAPI), and lightweight front-ends or dashboards for operations and
+                    monitoring.</li>
+                <li><strong>Deliverables:</strong> reproducible data pipelines, automation scripts, deployment-ready
+                    services, logging/monitoring hooks, and simple operator UIs for control and audit.</li>
+                <li><strong>Reliability & maintenance:</strong> retry strategies, idempotent jobs, unit tests for core
+                    transformations, and documentation for handover and scaling.</li>
+                <li><strong>Business impact:</strong> time savings, fewer manual errors, faster hiring/processing
+                    cycles, and self-serve analytics for non-technical stakeholders.</li>
+            </ul>
+            <a href="#contact" class="btn btn2 modal-contact-btn">Get in Touch</a>
+        </div>
+    </div>
+
+    <div class="modal" id="recommender-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Recommendation Engines</h2>
+            <p>Build recommendation systems that increase engagement and conversions using collaborative, content‑based,
+                and hybrid strategies tuned to your data and product needs.</p>
+            <ul>
+                <li><strong>Approaches:</strong> collaborative filtering, content‑based similarity (TF‑IDF /
+                    embeddings), matrix factorization, and hybrid pipelines combining signals for robust
+                    recommendations.</li>
+                <li><strong>Deliverables:</strong> offline training pipelines, evaluation suites (precision/recall,
+                    MAP), lightweight online inference endpoints, and demo UIs for stakeholder review.</li>
+                <li><strong>Production concerns:</strong> feature stores for user/item features, caching & low‑latency
+                    APIs, A/B testing plans, and strategies for cold‑start items/users.</li>
+                <li><strong>Tools & infra:</strong> Python, scikit‑learn, implicit/matrix factorization libs,
+                    similarity/embedding tooling, and Streamlit or web endpoints for demos.</li>
+                <li><strong>Business impact:</strong> improved personalization, higher retention & conversion, and
+                    measurable uplift through testable rollout plans.</li>
+            </ul>
+            <a href="#contact" class="btn btn2 modal-contact-btn">Get in Touch</a>
+        </div>
+    </div>
+
+
+    <!-- ---------------------Portfolio-------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="Subtitle" style="margin-bottom: 30px;">My <span>Projects</span></h1>
+            <div class="portfolio-filters tab-title">
+                <p class="tab-links active-link" data-filter="all">All</p>
+                <p class="tab-links" data-filter="ml">ML</p>
+                <p class="tab-links" data-filter="dashboard">Dashboard</p>
+                <p class="tab-links" data-filter="chatbot">Chatbot</p>
+                <p class="tab-links" data-filter="ai">Advanced AI</p>
+            </div>
+            <div class="work-list">
+                <div class="work" data-tag="ml">
+                    <img src="images/Disease_Detection.webp" alt="Smart Healthcare Hub Disease Diagnosis App">
+                    <div class="layer">
+                        <h2>Smart Healthcare Hub</h2>
+                        <p>🔬 Take charge of your health with this ML-powered Disease Diagnosis Web App!<br>
+                            From smart predictions (Diabetes, Heart, Cancer, Viral) to chatbot advice and lifestyle tips
+                            it’s your personal health buddy with a sleek UI and AI brains with smart healthy diet plan,
+                            all built with Flask and open-source love!</p>
+                        <a href="https://github.com/Manthan2110/Flask-Healthcare-Hub" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-tag="chatbot">
+                    <img src="images/Food_Bot.webp" alt="Snacky AI-Powered Food Service Chatbot">
+                    <div class="layer">
+                        <h2 style="margin-bottom: 0px;">Snacky</h2>
+                        <h3>AI-Powered Food Service Chatbot</h3>
+                        <p>This project is my final year project in college. I developed and deployed a Dialogflow-based
+                            chatbot to automate 90% of customer interactions for an
+                            online food delivery service, reducing support workload and increasing order completions by
+                            30% through
+                            data-driven response optimization.</p>
+                        <a href="https://github.com/Manthan2110/Snacky-Ai-based-food-Service-chatbot" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-tag="ai">
+                    <img src="images/Dark_Spots.webp" alt="Face Dark Spots & Eyes Detection Computer Vision">
+                    <div class="layer">
+                        <h2>Face Dark Spots &<br> Eyes Detection</h2>
+                        <p>A computer vision application using OpenCV that detects faces, eyes, and dark spots under the
+                            eyes.
+                            It includes severity grading and annotated outputs, making it useful for cosmetic analysis,
+                            medical imaging,
+                            or AI-based face preprocessing tasks.</p>
+                        <a href="https://face-dark-spot-detection.streamlit.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden-work" data-tag="ml">
+                    <img src="images/Books.webp" alt="BookVerse AI Book Recommendation Web App">
+                    <div class="layer">
+                        <h2 style="margin-bottom: 0px;">BookVerse</h2>
+                        <h3>AI-Powered Reading Companion</h3>
+                        <p>Unleash your inner bookworm with this ML-powered Book Recommendation Web App! Built for
+                            curious readers,
+                            it smartly suggests your next favorite read stylish UI, witty surprises, and open-source
+                            magic all rolled into one!.</p>
+                        <a href="https://github.com/Manthan2110/BookVerse" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden-work" data-tag="dashboard">
+                    <img src="images/Hospital.webp" alt="Hospital Management Power BI Dashboard">
+                    <div class="layer">
+                        <h3>Hospital Managment Dashboard</h3>
+                        <p>This end-to-end BI project visualizes operational data of a hospital using
+                            Power BI. It provides a view of hospital performance across departments such as Patient
+                            Care,
+                            Doctor Management, Hospital Operations, & Financial Analytics. The goal was to build a
+                            dashboard that enables healthcare admin to make data-driven decisions.</p>
+                        <a href="https://hospital-managment-dashboard.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden-work" data-tag="dashboard">
+                    <img src="images/Blinkit.webp" alt="Blinkit Business Intelligence Dashboard">
+                    <div class="layer">
+                        <h2>Blinkit Business Intelligence Dashboard</h2>
+                        <p>An interactive Power BI dashboard designed to analyze Blinkit's operational data,
+                            uncovering insights on sales trends, product performance, inventory bottlenecks, and
+                            regional growth.
+                            It empowers data-driven decision-making to optimize operations and boost revenue.</p>
+                        <a href="https://blinkitdashboard.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden-work" data-tag="dashboard">
+                    <img src="images/Weather.webp" alt="Weather Analytics Power BI Dashboard">
+                    <div class="layer">
+                        <h2>Weather Analytics Dashboard</h2>
+                        <p>An interactive BI analytics dashboard designed to visualize real-time atmospheric metrics,
+                            precipitation trends, temperature anomalies, and multi-city meteorological forecasts to
+                            enable
+                            data-backed weather pattern tracking and insights.</p>
+                        <a href="https://github.com/Manthan2110/Weather-Dashboard" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden-work" data-tag="ai">
+                    <img src="images/Summarizer.webp" alt="LiteNote AI Summarizer for YouTube & Docs">
+                    <div class="layer">
+                        <h2 style="margin-bottom: 0px;">LiteNote</h2>
+                        <h3>AI Summarizer for YouTube & Docs</h3>
+                        <p>An AI-powered productivity tool that summarizes long videos, articles, and documents into
+                            concise,
+                            actionable notes. Built with Streamlit and Google Gemini, LiteNote allows users to quickly
+                            capture insights,
+                            save time, and focus on the most important content.</p>
+                        <a href="https://litenote-a-smart-content-summarizer.streamlit.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-tag="ml">
+                    <img src="images/FlavorFinder.webp" alt="FlavorFinder Restaurant Recommendation App">
+                    <div class="layer">
+                        <h2 style="margin-bottom: 0px;">FlavorFinder</h2>
+                        <h3>Restaurant Recommendation</h3>
+                        <p>An AI-powered smart food discovery app that provides personalized restaurant recommendations
+                            based on
+                            cuisine, location, ratings, and user preferences. Built with Streamlit and collaborative
+                            filtering,
+                            it helps users discover trending, highly-rated, and tailored dining options effortlessly.
+                        </p>
+                        <a href="https://github.com/Manthan2110/FlavorFinder" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden-work" data-tag="ai">
+                    <img src="images/Resume.webp" alt="ResumeHub AI Resume Parser & Matcher">
+                    <div class="layer">
+                        <h2 style="margin-bottom: 0px;">ResumeHub</h2>
+                        <h3>AI-Powered Resume Parser & Matcher</h3>
+                        <p>An AI-driven recruiting assistant that parses resumes, extracts structured data, and matches
+                            candidates to job descriptions using Google Gemini and TF-IDF semantic similarity. It helps
+                            recruiters
+                            save time, detect missing keywords, and improve hiring efficiency with a clean, modern UI.
+                        </p>
+                        <a href="https://github.com/Manthan2110/Talent-Match-AI" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden-work" data-tag="ai">
+                    <img src="images/AskDB.png" alt="AskDB AI-Powered SQL Assistant">
+                    <div class="layer">
+                        <h2 style="margin-bottom: 0px;">AskDB</h2>
+                        <h3>AI-Powered SQL Assistant</h3>
+                        <p>AskDB is an intelligent web app that lets users query databases in plain English using LLMs.
+                            Built with Flask and TailwindCSS, it automatically converts natural language into SQL,
+                            executes queries, and
+                            visualizes the results with interactive analytics making data exploration effortless for
+                            both technical and
+                            non-technical users.</p>
+                        <a href="https://github.com/Manthan2110/AskDB-AI-SQL-Assistant" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden-work" data-tag="ai">
+                    <img src="images/Pix2Caption.jpg" alt="Pix2Caption Image Caption Generator">
+                    <div class="layer">
+                        <h2 style="margin-bottom: 0px;">Pix2Caption</h2>
+                        <h3>Image Caption Generator</h3>
+                        <p>Pix2Caption is an image-to-text system that uses a pretrained CNN encoder and an LSTM decoder
+                            to generate natural language captions for photos. A custom data generator handles
+                            preprocessing and
+                            batching, enabling training on large image–caption datasets to produce descriptive,
+                            human-like captions
+                            automatically.</p>
+                        <a href="https://pix2caption-image-captioning.streamlit.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" id="seeMoreBtn">See More</a>
+        </div>
+    </div>
+    <!-- ---------------------------Contact Us---------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="Subtitle">Contact <span>Me</span></h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> manthanjadav746@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-9313039112</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/9313039112"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/manthan21/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Manthan2110" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://t.me/ManthanJadav" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" target="_blank" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form" name="contact-form">
+                        <!-- Web3Forms Access Key & Configuration (Option B) -->
+                        <input type="hidden" name="access_key" id="access_key"
+                            value="63a04df5-9fd8-42d8-81f0-1e37dec97766">
+                        <input type="hidden" name="subject" value="New Portfolio Contact Message from Website">
+                        <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="user_subject" placeholder="Your Subject" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2" id="form-submit-btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Manthan. Made with <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div id="back-to-top" onclick="scrollToTop()" title="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
 
     <!-- Remove the big inline script block and add an external script file instead -->
     <script src="script.js" defer></script>
 </body>
+
 </html>
